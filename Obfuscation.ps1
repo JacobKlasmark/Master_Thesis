@@ -66,3 +66,15 @@ function obfuscate($command,$outPath){
 		$i--
 	}
 }
+
+$outPath = "/home/kali/Master_Thesis/Obfuscated_out/"
+
+#Now Lets do all the obfuscation
+#obfuscate 'Token,String,1' $outPath'Token_String_1/'
+
+#For base64string
+#obfuscate 'Nothin' $outPath'Base64/'
+
+Remove-Module Invoke-Obfuscation
+write-host ("Elapsed Time since we started obfuscation: ")
+$stopwatch
